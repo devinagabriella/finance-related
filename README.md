@@ -16,7 +16,7 @@ Compare between Euler discretizations schemes under the Heston stochastic volati
 Simulate random orders based on the Glosten-Milgrom model to analyze market dynamics and price discovery. Using Bayesian belief updating to track dealer's belief of the asset value in a sequential trade environment. Analyze the effect of different amount of informed traders on the speed of price discovery and on the bid-ask spread.
 
 ### 3. [Bisection vs Newton-Rhapson Method](https://github.com/devinagabriella/finance-related/blob/main/Bisection_Newton_Rhapson_updated.py)
-Compare between bisection and Newton-Rhapson method to estimate implied volatility. The idea is to use [implied volatility surface data](https://github.com/devinagabriella/finance-related/blob/main/implied%20vol%20surface.csv) to find European call option prices using Black-Scholes formula, then estimate back the implied volatility surface using bisection method and Newton-Rhapson method.
+Compare between bisection and Newton-Rhapson method to estimate implied volatility. The idea is to use [implied volatility surface data](https://github.com/devinagabriella/finance-related/blob/main/implied%20vol%20surface.csv) extracted from Bloomber Terminal to find European call option prices using Black-Scholes formula, then estimate back the implied volatility surface using bisection method and Newton-Rhapson method.
 
 ### 4. [Random Number Generators](https://github.com/devinagabriella/finance-related/blob/main/random_num_gen.py)
    a. Compute mean and variance of a Brownian motion using Monte Carlo simulation then compare it with the theoretical values.
