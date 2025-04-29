@@ -101,17 +101,11 @@ mu_t = [mu_0]
 order_history = []
 theta_t = [theta_0]
 
-# generate random 0 1 based on the prob of buy and sell
-# 0 for buy 1 for sell
-# 100 random numbers
-# calculate the beliefs and the price at each t
-# repeat for 10 times
-
-# Generate 100 orders
+# Generate random 100 orders based on the probability of buy and sell
 orders = np.random.choice(["buy", "sell"], size=n_orders, p=[pr_buy, 1 - pr_buy])
 
-#print(orders[:5])
 for i,order in enumerate(orders):
+    # calculate the dealer's beliefs and the price at each t
     if order == 'buy':
         #calculate p_t
         a_t_numerator = pi*theta_t[i]*(1-theta_t[i])*(V_h-V_l)
